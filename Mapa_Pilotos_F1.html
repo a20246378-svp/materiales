@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8e8667e2a4524d4fd142807bf75a91b9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8e8667e2a4524d4fd142807bf75a91b9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8e8667e2a4524d4fd142807bf75a91b9 = L.map(
+                "map_8e8667e2a4524d4fd142807bf75a91b9",
+                {
+                    center: [50.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 3.5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_8e8667e2a4524d4fd142807bf75a91b9);
+
+            
+
+        
+    
+            var tile_layer_b863ce7d09626cf17926799431457a33 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap contributors\u003c/a\u003e | Datos bajo licencia \u003ca href=\"https://opendatacommons.org/licenses/odbl/\"\u003eODbL\u003c/a\u003e",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+  "referrerPolicy": "strict-origin",
+}
+
+            );
+        
+    
+            tile_layer_b863ce7d09626cf17926799431457a33.addTo(map_8e8667e2a4524d4fd142807bf75a91b9);
+        
+    
+            var marker_4f3c94836ca85b4e9ccd859f56a93d8d = L.marker(
+                [51.90895, -0.176081],
+                {
+}
+            ).addTo(map_8e8667e2a4524d4fd142807bf75a91b9);
+        
+    
+            var icon_e9bb6d27790493df651e2f61c8189393 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91e01318cbedb11c52eb03564de7dcce = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_10c9604bbc2be8aaf676a3c432f84501 = $(`<div id="html_10c9604bbc2be8aaf676a3c432f84501" style="width: 100.0%; height: 100.0%;"> <h3>Lewis Hamilton</h3> <p><b>Escudería:</b> Mercedes</p> <img src='https://e00-marca.uecdn.es/assets/multimedia/imagenes/2016/11/14/14791147246938.jpg' width='200'> <p><b>Puntaje total:</b> 380 puntos</p> </div>`)[0];
+                popup_91e01318cbedb11c52eb03564de7dcce.setContent(html_10c9604bbc2be8aaf676a3c432f84501);
+            
+        
+
+        marker_4f3c94836ca85b4e9ccd859f56a93d8d.bindPopup(popup_91e01318cbedb11c52eb03564de7dcce)
+        ;
+
+        
+    
+    
+            marker_4f3c94836ca85b4e9ccd859f56a93d8d.bindTooltip(
+                `<div>
+                     L. HAMILTON
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4f3c94836ca85b4e9ccd859f56a93d8d.setIcon(icon_e9bb6d27790493df651e2f61c8189393);
+            
+    
+            var marker_5d4695a60cf37ca585b6eca0c7a9adec = L.marker(
+                [49.639223, 8.642855],
+                {
+}
+            ).addTo(map_8e8667e2a4524d4fd142807bf75a91b9);
+        
+    
+            var icon_e3af6eacb5a63a49e393f200652f33dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d092c2c13c64abe93118bee68bcf891 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_238058e853cfa467feab0945eebbbfe8 = $(`<div id="html_238058e853cfa467feab0945eebbbfe8" style="width: 100.0%; height: 100.0%;"> <h3>Sebastian Vettel</h3> <p><b>Escudería:</b> Ferrari</p> <img src='https://sfcriga.com/images/others/sfcriga_sebastian-vettel-the-next-michael_photo01.jpg' width='200'> <p><b>Puntaje total:</b> 212 puntos</p> </div>`)[0];
+                popup_7d092c2c13c64abe93118bee68bcf891.setContent(html_238058e853cfa467feab0945eebbbfe8);
+            
+        
+
+        marker_5d4695a60cf37ca585b6eca0c7a9adec.bindPopup(popup_7d092c2c13c64abe93118bee68bcf891)
+        ;
+
+        
+    
+    
+            marker_5d4695a60cf37ca585b6eca0c7a9adec.bindTooltip(
+                `<div>
+                     S. VETTEL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5d4695a60cf37ca585b6eca0c7a9adec.setIcon(icon_e3af6eacb5a63a49e393f200652f33dd);
+            
+    
+            tile_layer_b863ce7d09626cf17926799431457a33.addTo(map_8e8667e2a4524d4fd142807bf75a91b9);
+        
+    
+                marker_4f3c94836ca85b4e9ccd859f56a93d8d.setIcon(icon_e9bb6d27790493df651e2f61c8189393);
+            
+    
+                marker_5d4695a60cf37ca585b6eca0c7a9adec.setIcon(icon_e3af6eacb5a63a49e393f200652f33dd);
+            
+</script>
+</html>
